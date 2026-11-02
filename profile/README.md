@@ -2,12 +2,12 @@
 
 Open, verified space-data computation.
 
-**[spacelab](https://github.com/SpaceDataLab/spacelab)** is astrodynamics in Rust, organised
-around independent verification: fundamental astronomy and reference frames, SGP4, numerical and
-semi-analytical propagation with the IERS 2010 force model, orbit determination, GNSS, satellite
-laser ranging, coverage and constellation design, and Earth-observation geometry. Every number it
-produces is checked against a lineage that did not come from the project, and each check is
-written down with its oracle and residual.
+**[spacelab](https://github.com/SpaceDataLab/spacelab)** is astrodynamics in Rust, with the
+verification as the deliverable. It covers fundamental astronomy and reference frames, SGP4,
+numerical and semi-analytical propagation with the IERS 2010 force model, orbit determination,
+GNSS, satellite laser ranging, coverage and constellation design, and Earth-observation geometry.
+Mathematics decides what is correct, every check is written down with its residual, and other
+codes are comparisons, never the proof.
 
 - **Rust**: [`cargo add spacedatalab`](https://crates.io/crates/spacedatalab), with every spacelab crate
   behind a feature, or [`cargo add spacelab`](https://crates.io/crates/spacelab) for the core ·
